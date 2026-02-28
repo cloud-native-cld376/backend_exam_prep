@@ -1,0 +1,202 @@
+[
+    {
+      "question": "How do you access a parent context property when inside a nested block in Handlebars?",
+      "answers": [
+        "^property",
+        "parent.property",
+        "@property",
+        "../property"
+      ],
+      "correctAnswer": "../property"
+    },
+    {
+      "question": "What is the advantage of using HTML5 Boilerplate for templates?",
+      "answers": [
+        "It offers a well-crafted starting point with cross-browser compatibility",
+        "It includes server-side logic",
+        "It provides database integration",
+        "It automatically generates content"
+      ],
+      "correctAnswer": "It offers a well-crafted starting point with cross-browser compatibility"
+    },
+    {
+      "question": "What is the purpose of \"sections\" in Handlebars templates?",
+      "answers": [
+        "To handle form validation",
+        "To create multiple layouts",
+        "To organize CSS files",
+        "To allow views to inject content into different parts of the layout"
+      ],
+      "correctAnswer": "To allow views to inject content into different parts of the layout"
+    },
+    {
+      "question": "In Handlebars, how many curly brackets should you use to render HTML content without escaping it?",
+      "answers": [
+        "Four brackets: {{{{content}}}}",
+        "One bracket: {content}",
+        "Three brackets: {{{content}}}",
+        "Two brackets: {{content}}"
+      ],
+      "correctAnswer": "Three brackets: {{{content}}}"
+    },
+    {
+      "question": "By default, where does Express look for views?",
+      "answers": [
+        "/views subdirectory",
+        "/pages subdirectory",
+        "/templates subdirectory",
+        "/public subdirectory"
+      ],
+      "correctAnswer": "/views subdirectory"
+    },
+    {
+      "question": "Can express-handlebars support subdirectories for organizing partials?",
+      "answers": [
+        "Yes, you can organize partials in subdirectories",
+        "Only in production mode",
+        "No, all partials must be in the root partials directory",
+        "Only with additional plugins"
+      ],
+      "correctAnswer": "Yes, you can organize partials in subdirectories"
+    },
+    {
+      "question": "What is the primary advantage of using templating engines over writing HTML in JavaScript using document.write()?",
+      "answers": [
+        "Requires less server resources",
+        "Faster page loading times",
+        "Works better with older browsers",
+        "Avoids context switching and escaping issues"
+      ],
+      "correctAnswer": "Avoids context switching and escaping issues"
+    },
+    {
+      "question": "How do you render a view without a layout in Express?",
+      "answers": [
+        "res.render('view', { layout: false })",
+        "res.render('view', { noLayout: true })",
+        "res.render('view', { layout: null })",
+        "res.renderNoLayout('view')"
+      ],
+      "correctAnswer": "res.render('view', { layout: false })"
+    },
+    {
+      "question": "What is the default behavior of view caching in Express?",
+      "answers": [
+        "Disabled in development, enabled in production",
+        "Always disabled",
+        "Enabled in development, disabled in production",
+        "Always enabled"
+      ],
+      "correctAnswer": "Disabled in development, enabled in production"
+    },
+    {
+      "question": "What is the purpose of a layout in Handlebars?",
+      "answers": [
+        "To serve as a template for templates with common page structure",
+        "To process form data",
+        "To handle routing",
+        "To style the page with CSS"
+      ],
+      "correctAnswer": "To serve as a template for templates with common page structure"
+    },
+    {
+      "question": "What is a common use case for partials in web development?",
+      "answers": [
+        "Reusable components (widgets) across different pages",
+        "Database connections",
+        "API endpoints",
+        "User authentication"
+      ],
+      "correctAnswer": "Reusable components (widgets) across different pages"
+    },
+    {
+      "question": "Where does Express look for partials by default?",
+      "answers": [
+        "/views/partials",
+        "/views/components",
+        "/templates/partials",
+        "/public/partials"
+      ],
+      "correctAnswer": "/views/partials"
+    },
+    {
+      "question": "Which order does the templating engine render content when using layouts?",
+      "answers": [
+        "Layout first, then view",
+        "Randomly",
+        "View first, then layout",
+        "Simultaneously"
+      ],
+      "correctAnswer": "View first, then layout"
+    },
+    {
+      "question": "What placeholder is used in a layout file to indicate where the view content should be rendered?",
+      "answers": [
+        "{{content}}",
+        "{{view}}",
+        "{{{body}}}",
+        "{{page}}"
+      ],
+      "correctAnswer": "{{{body}}}"
+    },
+    {
+      "question": "What is the purpose of the {{#unless}} helper in Handlebars?",
+      "answers": [
+        "It executes code when a condition is true",
+        "It prevents code execution",
+        "It executes code only when the argument is false",
+        "It creates a loop"
+      ],
+      "correctAnswer": "It executes code only when the argument is false"
+    },
+    {
+      "question": "What does the {{#each}} helper do in Handlebars?",
+      "answers": [
+        "Iterates over an array",
+        "Looks through object properties only",
+        "Defines a function",
+        "Creates conditional statements"
+      ],
+      "correctAnswer": "Iterates over an array"
+    },
+    {
+      "question": "How do you include a partial named \"weather\" in a Handlebars view?",
+      "answers": [
+        "{{>weather}}",
+        "{{partial weather}}",
+        "{{include weather}}",
+        "{{weather}}"
+      ],
+      "correctAnswer": "{{>weather}}"
+    },
+    {
+      "question": "What npm package is used to add Handlebars support to Express?",
+      "answers": [
+        "node-handlebars",
+        "express-handlebars",
+        "handlebars",
+        "hbs-express"
+      ],
+      "correctAnswer": "express-handlebars"
+    },
+    {
+      "question": "Which comment syntax in Handlebars will NOT be sent to the browser?",
+      "answers": [
+        "{{! comment }}",
+        "",
+        "// comment",
+        "/* comment */"
+      ],
+      "correctAnswer": "{{! comment }}"
+    },
+    {
+      "question": "What is the context object in Handlebars templating?",
+      "answers": [
+        "The object passed to the templating engine containing data for replacements",
+        "The configuration settings for Handlebars",
+        "The HTTP request object",
+        "The middleware function stack"
+      ],
+      "correctAnswer": "The object passed to the templating engine containing data for replacements"
+    }
+  ]

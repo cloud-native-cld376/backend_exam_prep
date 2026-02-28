@@ -1,0 +1,202 @@
+[
+    {
+      "question": "What is the primary purpose of scaffolding in Express?",
+      "answers": [
+        "To organize code into smaller functions",
+        "To add fancy graphics to web pages",
+        "To create boilerplate code for new projects",
+        "To remove unnecessary code from projects"
+      ],
+      "correctAnswer": "To create boilerplate code for new projects"
+    },
+    {
+      "question": "How does Express handle route matching by default?",
+      "answers": [
+        "It ignores querystrings, trailing slashes, and case",
+        "It normalizes paths automatically",
+        "It requires manual normalization like Node",
+        "It always considers querystrings"
+      ],
+      "correctAnswer": "It ignores querystrings, trailing slashes, and case"
+    },
+    {
+      "question": "Which tool does Express provide to automatically generate scaffolding?",
+      "answers": [
+        "express-generator",
+        "scaffold-express",
+        "express-setup",
+        "express-init"
+      ],
+      "correctAnswer": "express-generator"
+    },
+    {
+      "question": "What does the expression {{body}} represent in Handlebars?",
+      "answers": [
+        "The CSS styling section",
+        "A comment in the template",
+        "The main content area of the layout",
+        "The placeholder where view content is inserted"
+      ],
+      "correctAnswer": "The placeholder where view content is inserted"
+    },
+    {
+      "question": "When must you explicitly set the status code in Express routes?",
+      "answers": [
+        "For custom 404 and 500 error pages",
+        "When serving HTML files",
+        "Only when serving static files",
+        "When redirecting users"
+      ],
+      "correctAnswer": "For custom 404 and 500 error pages"
+    },
+    {
+      "question": "What is the purpose of the layout in Handlebars templates?",
+      "answers": [
+        "To create responsive web design",
+        "To provide a common framework for pages",
+        "To replace HTML code repetition",
+        "To reuse common HTML across multiple pages"
+      ],
+      "correctAnswer": "To reuse common HTML across multiple pages"
+    },
+    {
+      "question": "Which method is used to add routes for GET requests in Express?",
+      "answers": [
+        "app.listen()",
+        "app.get()",
+        "app.all()",
+        "app.post()"
+      ],
+      "correctAnswer": "app.get()"
+    },
+    {
+      "question": "What file contains project metadata and dependencies in Node?",
+      "answers": [
+        "node_modules",
+        "package.json",
+        "gitignore",
+        "package-lock.json"
+      ],
+      "correctAnswer": "package.json"
+    },
+    {
+      "question": "What is the difference between static files and views?",
+      "answers": [
+        "Static files are always cached, views are not",
+        "Static files are served with special processing, views are not",
+        "Static files never change, views may be dynamic",
+        "Static files use templates, views don't"
+      ],
+      "correctAnswer": "Static files never change, views may be dynamic"
+    },
+    {
+      "question": "What is the running example website used throughout the Express textbook?",
+      "answers": [
+        "React Application",
+        "Node.js Documentation Site",
+        "Travel Guide App",
+        "Meadowlark Travel"
+      ],
+      "correctAnswer": "Meadowlark Travel"
+    },
+    {
+      "question": "What is the purpose of app.use() in Express?",
+      "answers": [
+        "To add middleware to the application",
+        "To handle GET requests",
+        "To configure environment variables",
+        "To set HTTP headers"
+      ],
+      "correctAnswer": "To add middleware to the application"
+    },
+    {
+      "question": "How should you configure the Handlebars view engine in Express?",
+      "answers": [
+        "app.setView('handlebars')",
+        "app.engine('html', express.templates())",
+        "app.engine('handlebars', engine({ defaultLayout: 'main' })) app.set('view engine', 'handlebars')",
+        "app.set('view engine', 'html')"
+      ],
+      "correctAnswer": "app.engine('handlebars', engine({ defaultLayout: 'main' })) app.set('view engine', 'handlebars')"
+    },
+    {
+      "question": "What does static middleware do in Express?",
+      "answers": [
+        "Prevents unauthorized access to resources",
+        "Serves files dynamically generated on every request",
+        "Creates custom errors for missing files",
+        "Delivers static resources to the client without special handling"
+      ],
+      "correctAnswer": "Delivers static resources to the client without special handling"
+    },
+    {
+      "question": "What order matters when adding routes and middleware in Express?",
+      "answers": [
+        "Order is not important in Express",
+        "Catch-all handlers should be placed first",
+        "Order is significant, catch-all handlers must be last",
+        "Routes at the top take priority"
+      ],
+      "correctAnswer": "Order is significant, catch-all handlers must be last"
+    },
+    {
+      "question": "What is the default layout parameter when configuring Handlebars?",
+      "answers": [
+        "root",
+        "main",
+        "default",
+        "layout"
+      ],
+      "correctAnswer": "main"
+    },
+    {
+      "question": "What does res.type() do in Express?",
+      "answers": [
+        "Sets the Content-Type header",
+        "Sets up response headers",
+        "Renders views within layouts",
+        "Removes the Content-Type header"
+      ],
+      "correctAnswer": "Sets the Content-Type header"
+    },
+    {
+      "question": "What npm package provides Handlebars support for Express?",
+      "answers": [
+        "handlebars",
+        "express-handlebars",
+        "express-templates",
+        "handlebars-express"
+      ],
+      "correctAnswer": "express-handlebars"
+    },
+    {
+      "question": "Where are static resources (images, CSS, JS) typically stored in an Express project?",
+      "answers": [
+        "In a 'public' directory",
+        "In a 'resources' folder",
+        "In a 'images' directory",
+        "In a 'files' folder"
+      ],
+      "correctAnswer": "In a 'public' directory"
+    },
+    {
+      "question": "How does Express handle querystrings in route matching?",
+      "answers": [
+        "Querystrings add security to the route",
+        "Querystrings must always be specified",
+        "By default, trailing slashes don't affect routing",
+        "By default, querystrings are ignored in routing"
+      ],
+      "correctAnswer": "By default, querystrings are ignored in routing"
+    },
+    {
+      "question": "Which method renders a view in Express?",
+      "answers": [
+        "res.send()",
+        "res.json()",
+        "res.render()",
+        "res.set()"
+      ],
+      "correctAnswer": "res.render()"
+    }
+  ]

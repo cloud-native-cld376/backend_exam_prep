@@ -1,0 +1,202 @@
+[
+    {
+      "question": "What does the req.xhr property (or checking the header) help the server determine?",
+      "answers": [
+        "If the user is logged in",
+        "If the request was made via AJAX",
+        "The user's browser version",
+        "The file size of an upload"
+      ],
+      "correctAnswer": "If the request was made via AJAX"
+    },
+    {
+      "question": "Which middleware is commonly used in Express to handle URL-encoded form data?",
+      "answers": [
+        "morgan",
+        "cookie-parser",
+        "body-parser",
+        "session"
+      ],
+      "correctAnswer": "body-parser"
+    },
+    {
+      "question": "What is a \"honeypot\" field in the context of form handling?",
+      "answers": [
+        "A field that stores passwords",
+        "A field that uses JSON",
+        "A field for high-priority data",
+        "A hidden field designed to catch bots"
+      ],
+      "correctAnswer": "A hidden field designed to catch bots"
+    },
+    {
+      "question": "In modern web development, what is the shift regarding form rendering?",
+      "answers": [
+        "Toward Single-Page Applications (SPAs)",
+        "Away from using HTML forms",
+        "Toward server-only forms",
+        "Toward XML-based forms"
+      ],
+      "correctAnswer": "Toward Single-Page Applications (SPAs)"
+    },
+    {
+      "question": "When using Fetch, what header is often sent to indicate an AJAX request?",
+      "answers": [
+        "Content-Encoding",
+        "User-Agent",
+        "Accept-Language",
+        "X-Requested-With"
+      ],
+      "correctAnswer": "X-Requested-With"
+    },
+    {
+      "question": "Which Node package is recommended in the book for handling file uploads?",
+      "answers": [
+        "multiparty",
+        "multer",
+        "busboy",
+        "express-formidable"
+      ],
+      "correctAnswer": "multiparty"
+    },
+    {
+      "question": "What are the two primary options for sending client data to the server?",
+      "answers": [
+        "Querystring and Request Body",
+        "LocalStorage and Session",
+        "Headers and Cookies",
+        "IP Address and User Agent"
+      ],
+      "correctAnswer": "Querystring and Request Body"
+    },
+    {
+      "question": "In a POST request, where does body-parser make the form data available?",
+      "answers": [
+        "res.locals",
+        "req.query",
+        "req.params",
+        "req.body"
+      ],
+      "correctAnswer": "req.body"
+    },
+    {
+      "question": "What is the purpose of the id attribute in an HTML input tag?",
+      "answers": [
+        "Database indexing",
+        "Styling and frontend functionality",
+        "Defining the data type",
+        "Identification for the server"
+      ],
+      "correctAnswer": "Styling and frontend functionality"
+    },
+    {
+      "question": "Which encoding type is required for a form that includes file uploads?",
+      "answers": [
+        "application/x-www-form-urlencoded",
+        "application/json",
+        "text/plain",
+        "multipart/form-data"
+      ],
+      "correctAnswer": "multipart/form-data"
+    },
+    {
+      "question": "If the method attribute is omitted from an HTML <form> tag, what is the default?",
+      "answers": [
+        "FETCH",
+        "GET",
+        "PUT",
+        "POST"
+      ],
+      "correctAnswer": "GET"
+    },
+    {
+      "question": "What is the main benefit of using AJAX (Fetch) for form submission?",
+      "answers": [
+        "It is required for HTTPS",
+        "It automatically validates all data",
+        "It provides a more seamless user experience without page reloads",
+        "It is the only way to send POST requests"
+      ],
+      "correctAnswer": "It provides a more seamless user experience without page reloads"
+    },
+    {
+      "question": "What is the risk of not specifying a form action?",
+      "answers": [
+        "The server will crash",
+        "The form won't submit",
+        "It may lead to data loss or incorrect routing",
+        "JavaScript will be disabled"
+      ],
+      "correctAnswer": "It may lead to data loss or incorrect routing"
+    },
+    {
+      "question": "What is the standard status code for a \"See Other\" redirect after a form submission?",
+      "answers": [
+        "200",
+        "303",
+        "404",
+        "302"
+      ],
+      "correctAnswer": "303"
+    },
+    {
+      "question": "What is a major disadvantage of using GET for form submissions?",
+      "answers": [
+        "It cannot send data to the server",
+        "It requires a database connection",
+        "It is never secure even with HTTPS",
+        "Browsers often limit querystring length"
+      ],
+      "correctAnswer": "Browsers often limit querystring length"
+    },
+    {
+      "question": "Why should you not use hidden form fields for secret information?",
+      "answers": [
+        "They are not sent to the server",
+        "Users can easily see them by viewing the source",
+        "They slow down the server",
+        "They are encrypted automatically"
+      ],
+      "correctAnswer": "Users can easily see them by viewing the source"
+    },
+    {
+      "question": "What happens if you omit the action attribute in an HTML form?",
+      "answers": [
+        "The form is disabled",
+        "The form is submitted to its own URL",
+        "The browser throws an error",
+        "The form is sent to the home page"
+      ],
+      "correctAnswer": "The form is submitted to its own URL"
+    },
+    {
+      "question": "Why is it recommended to redirect after a successful POST request?",
+      "answers": [
+        "To prevent \"Confirm Form Resubmission\" warnings",
+        "To hide the server IP",
+        "To clear the server cache",
+        "To improve SEO"
+      ],
+      "correctAnswer": "To prevent \"Confirm Form Resubmission\" warnings"
+    },
+    {
+      "question": "Which attribute in an <input> field is used by the server to identify the field?",
+      "answers": [
+        "id",
+        "value",
+        "class",
+        "name"
+      ],
+      "correctAnswer": "name"
+    },
+    {
+      "question": "Which HTTP method is typically associated with the querystring?",
+      "answers": [
+        "DELETE",
+        "GET",
+        "PUT",
+        "POST"
+      ],
+      "correctAnswer": "GET"
+    }
+  ]

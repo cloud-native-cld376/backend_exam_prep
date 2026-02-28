@@ -1,0 +1,202 @@
+[
+    {
+      "question": "Which response method is used to send JSON data to the client?",
+      "answers": [
+        "res.json()",
+        "res.write()",
+        "res.send()",
+        "res.render()"
+      ],
+      "correctAnswer": "res.json()"
+    },
+    {
+      "question": "Which method redirects the browser to a different URL?",
+      "answers": [
+        "res.route()",
+        "res.send()",
+        "res.redirect()",
+        "res.navigate()"
+      ],
+      "correctAnswer": "res.redirect()"
+    },
+    {
+      "question": "In a URL like http://localhost:3000/vacations?sort=price#details, what is #details called?",
+      "answers": [
+        "Querystring",
+        "Path",
+        "Parameter",
+        "Fragment"
+      ],
+      "correctAnswer": "Fragment"
+    },
+    {
+      "question": "Which property distinguishes between a regular request and an Ajax request?",
+      "answers": [
+        "req.type",
+        "req.ajax",
+        "req.xhr",
+        "req.async"
+      ],
+      "correctAnswer": "req.xhr"
+    },
+    {
+      "question": "What does MIME stand for in the context of internet media types?",
+      "answers": [
+        "Media Internet Markup Engine",
+        "Multipurpose Internet Mail Extensions",
+        "Multiple Input Message Exchange",
+        "Modern Internet Messaging Environment"
+      ],
+      "correctAnswer": "Multipurpose Internet Mail Extensions"
+    },
+    {
+      "question": "What port is assumed by default for HTTPS connections if no port is specified in the URL?",
+      "answers": [
+        "3000",
+        "443",
+        "8080",
+        "80"
+      ],
+      "correctAnswer": "443"
+    },
+    {
+      "question": "Where are POST parameters typically passed?",
+      "answers": [
+        "In the request body",
+        "In the request headers",
+        "In the URL querystring",
+        "In the fragment"
+      ],
+      "correctAnswer": "In the request body"
+    },
+    {
+      "question": "Which HTTP method is most commonly used when a user types a URL into a browser?",
+      "answers": [
+        "POST",
+        "GET",
+        "DELETE",
+        "PUT"
+      ],
+      "correctAnswer": "GET"
+    },
+    {
+      "question": "How do you disable Express's default X-Powered-By header for security?",
+      "answers": [
+        "app.hide('x-powered-by')",
+        "app.disable('x-powered-by')",
+        "app.secure('x-powered-by')",
+        "app.remove('x-powered-by')"
+      ],
+      "correctAnswer": "app.disable('x-powered-by')"
+    },
+    {
+      "question": "What are the two main objects that Express uses to handle HTTP communication?",
+      "answers": [
+        "Server and Client objects",
+        "Session and Cookie objects",
+        "Request and Response objects",
+        "Input and Output objects"
+      ],
+      "correctAnswer": "Request and Response objects"
+    },
+    {
+      "question": "Which convenience property checks if a connection is secure (HTTPS)?",
+      "answers": [
+        "req.secure",
+        "req.https",
+        "req.ssl",
+        "req.encrypted"
+      ],
+      "correctAnswer": "req.secure"
+    },
+    {
+      "question": "What does the Content-Type header indicate?",
+      "answers": [
+        "What kind of content is being transmitted",
+        "The size of the response",
+        "The authentication status",
+        "The server's IP address"
+      ],
+      "correctAnswer": "What kind of content is being transmitted"
+    },
+    {
+      "question": "What internet media type format is most common for POST request bodies?",
+      "answers": [
+        "application/x-www-form-urlencoded",
+        "application/json",
+        "multipart/form-data",
+        "text/plain"
+      ],
+      "correctAnswer": "application/x-www-form-urlencoded"
+    },
+    {
+      "question": "What is the default HTTP status code that Express returns for successful responses?",
+      "answers": [
+        "200",
+        "204",
+        "202",
+        "201"
+      ],
+      "correctAnswer": "200"
+    },
+    {
+      "question": "What Node object does the Express request object extend?",
+      "answers": [
+        "stream.Readable",
+        "http.Request",
+        "net.Socket",
+        "http.IncomingMessage"
+      ],
+      "correctAnswer": "http.IncomingMessage"
+    },
+    {
+      "question": "Which property provides information about the currently matched route, primarily useful for debugging?",
+      "answers": [
+        "req.route",
+        "req.path",
+        "req.params",
+        "req.url"
+      ],
+      "correctAnswer": "req.route"
+    },
+    {
+      "question": "Which method sets the HTTP status code in Express?",
+      "answers": [
+        "res.setStatus()",
+        "res.code()",
+        "res.httpStatus()",
+        "res.status()"
+      ],
+      "correctAnswer": "res.status()"
+    },
+    {
+      "question": "What is the relationship between req.url and req.originalUrl?",
+      "answers": [
+        "req.url can be rewritten for routing, but req.originalUrl remains unchanged",
+        "req.url is deprecated",
+        "They are identical in all cases",
+        "req.originalUrl includes the protocol and host"
+      ],
+      "correctAnswer": "req.url can be rewritten for routing, but req.originalUrl remains unchanged"
+    },
+    {
+      "question": "Which property would you use to access querystring parameters in Express?",
+      "answers": [
+        "req.body",
+        "req.query",
+        "req.params",
+        "req.search"
+      ],
+      "correctAnswer": "req.query"
+    },
+    {
+      "question": "Which method is used to render a view using Express's configured templating engine?",
+      "answers": [
+        "res.template()",
+        "res.display()",
+        "res.view()",
+        "res.render()"
+      ],
+      "correctAnswer": "res.render()"
+    }
+  ]

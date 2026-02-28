@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCM Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>QCM Quiz</h1>
+      <p class="subtitle">Test your knowledge</p>
+    </header>
+
+    <main class="main">
+      <!-- PIN entry (shown first) -->
+      <section id="pin-panel" class="panel">
+        <h2>Enter PIN</h2>
+        <p class="pin-desc">Enter the 8-digit PIN to access the quizzes.</p>
+        <form id="pin-form" class="pin-form">
+          <input type="password" id="pin-input" class="pin-input" inputmode="numeric" pattern="[0-9]*" maxlength="8" placeholder="••••••••" autocomplete="off" aria-label="8-digit PIN">
+          <button type="submit" class="btn btn-primary">Continue</button>
+        </form>
+        <p id="pin-error" class="pin-error hidden" role="alert"></p>
+      </section>
+
+      <!-- Quiz selection -->
+      <section id="quiz-select" class="panel hidden">
+        <h2>Choose a quiz</h2>
+        <div class="quiz-list" id="quiz-list"></div>
+        <p class="hint">Open this page via a local server (e.g. <code>python -m http.server</code>) so quizzes load from the data folder.</p>
+      </section>
+
+      <!-- Quiz in progress -->
+      <section id="quiz-panel" class="panel hidden">
+        <div class="quiz-meta">
+          <button type="button" id="btn-back-to-menu" class="btn-back-to-menu" aria-label="Back to quiz list">← Menu</button>
+          <span id="quiz-title" class="quiz-title"></span>
+          <span id="progress" class="progress"></span>
+        </div>
+        <div class="progress-bar-wrap" aria-hidden="true">
+          <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div>
+        </div>
+        <div class="question-card" id="question-card">
+          <h2 id="question-text" class="question-text"></h2>
+          <ul id="answers-list" class="answers-list" role="radiogroup" aria-label="Choose one answer"></ul>
+        </div>
+        <div class="actions">
+          <button type="button" id="btn-prev" class="btn btn-secondary" disabled>Previous</button>
+          <button type="button" id="btn-next" class="btn btn-primary">Next</button>
+          <button type="button" id="btn-submit" class="btn btn-primary hidden">Submit</button>
+        </div>
+      </section>
+
+      <!-- View all Q&A (study mode) -->
+      <section id="view-all-panel" class="panel hidden">
+        <div class="view-all-header">
+          <button type="button" id="btn-back-from-viewall" class="btn-back-to-menu" aria-label="Back to quiz list">← Menu</button>
+          <h2>All questions & correct answers</h2>
+        </div>
+        <div id="view-all-content" class="view-all-content"></div>
+      </section>
+
+      <!-- Results -->
+      <section id="results-panel" class="panel results-panel hidden">
+        <h2>Your score</h2>
+        <div id="score-display" class="score-display"></div>
+        <div id="score-detail" class="score-detail"></div>
+        <button type="button" id="btn-restart" class="btn btn-primary">Try another quiz</button>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

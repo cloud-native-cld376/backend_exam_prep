@@ -1,0 +1,202 @@
+[
+    {
+      "question": "What characteristic makes Express \"unopinionated\"",
+      "answers": [
+        "It has no documentation",
+        "It provides an extremely flexible middleware system that makes it easy to use components of your choice",
+        "It doesn't enforce any coding standards",
+        "It works with any programming language"
+      ],
+      "correctAnswer": "It provides an extremely flexible middleware system that makes it easy to use components of your choice"
+    },
+    {
+      "question": "What JavaScript engine does Node use?",
+      "answers": [
+        "Chakra",
+        "V8",
+        "JavaScriptCore",
+        "SpiderMonkey"
+      ],
+      "correctAnswer": "V8"
+    },
+    {
+      "question": "What does the acronym MEAN stand for in the context of the JavaScript stack?",
+      "answers": [
+        "MongoDB, Express, Apache, Node",
+        "MySQL, Express, Apache, Next",
+        "Middleware, Express, Angular, Node",
+        "Mongo, Express, Angular, and Node"
+      ],
+      "correctAnswer": "Mongo, Express, Angular, and Node"
+    },
+    {
+      "question": "What command installs a package globally using npm?",
+      "answers": [
+        "npm install package-name",
+        "npm global install package-name",
+        "npm add -g package-name",
+        "npm install -g package-name"
+      ],
+      "correctAnswer": "npm install -g package-name"
+    },
+    {
+      "question": "What is the core philosophy behind Node?",
+      "answers": [
+        "Object-oriented programming",
+        "Event-driven programming",
+        "Functional programming",
+        "Procedural programming"
+      ],
+      "correctAnswer": "Event-driven programming"
+    },
+    {
+      "question": "Which technology has become the ubiquitous solution for managing dependencies in web applications?",
+      "answers": [
+        "Grunt",
+        "Bower",
+        "Gulp",
+        "Webpack"
+      ],
+      "correctAnswer": "Webpack"
+    },
+    {
+      "question": "Who created Node.js and in what year?",
+      "answers": [
+        "Ryan Dahl in 2009",
+        "Brendan Eich in 1995",
+        "Douglas Crockford in 2008",
+        "TJ Holowaychuk in 2007"
+      ],
+      "correctAnswer": "Ryan Dahl in 2009"
+    },
+    {
+      "question": "What does the __dirname global variable resolve to in Node?",
+      "answers": [
+        "The directory where Node is installed",
+        "The directory the executing script resides in",
+        "The user's home directory",
+        "The root directory of your project"
+      ],
+      "correctAnswer": "The directory the executing script resides in"
+    },
+    {
+      "question": "What is the primary characteristic that makes Express a \"minimal\" framework?",
+      "answers": [
+        "It only works with small applications",
+        "It has very few features",
+        "It provides a minimal layer between your brain and the server, allowing you to add functionality as needed",
+        "It requires minimal setup time"
+      ],
+      "correctAnswer": "It provides a minimal layer between your brain and the server, allowing you to add functionality as needed"
+    },
+    {
+      "question": "What Node method creates a basic HTTP server?",
+      "answers": [
+        "http.initServer()",
+        "http.makeServer()",
+        "http.createServer()",
+        "http.newServer()"
+      ],
+      "correctAnswer": "http.createServer()"
+    },
+    {
+      "question": "What is one major architectural difference between Node and traditional web servers like Apache or IIS?",
+      "answers": [
+        "Node requires a separate web server",
+        "Node cannot handle static files",
+        "Node uses multiple threads",
+        "Node is single threaded"
+      ],
+      "correctAnswer": "Node is single threaded"
+    },
+    {
+      "question": "What is the most common license you'll encounter for Node packages?",
+      "answers": [
+        "BSD License",
+        "MIT License",
+        "Apache 2.0",
+        "GPL (GNU General Public License)"
+      ],
+      "correctAnswer": "MIT License"
+    },
+    {
+      "question": "What is the default port for HTTP?",
+      "answers": [
+        "80",
+        "3000",
+        "8080",
+        "443"
+      ],
+      "correctAnswer": "80"
+    },
+    {
+      "question": "Which framework inspired the creation of Express?",
+      "answers": [
+        "Ruby on Rails",
+        "Laravel",
+        "Sinatra",
+        "Django"
+      ],
+      "correctAnswer": "Sinatra"
+    },
+    {
+      "question": "What keyboard combination typically terminates a running Node program in the terminal?",
+      "answers": [
+        "Ctrl-C",
+        "Ctrl-Z",
+        "Ctrl-X",
+        "Ctrl-Q"
+      ],
+      "correctAnswer": "Ctrl-C"
+    },
+    {
+      "question": "What method is used to read files asynchronously in Node?",
+      "answers": [
+        "fs.readAsync()",
+        "fs.readFile()",
+        "fs.read()",
+        "fs.loadFile()"
+      ],
+      "correctAnswer": "fs.readFile()"
+    },
+    {
+      "question": "What does npm stand for?",
+      "answers": [
+        "Node Programming Module",
+        "npm is not an acronym (recursive abbreviation)",
+        "New Package Manager",
+        "Node Package Manager"
+      ],
+      "correctAnswer": "npm is not an acronym (recursive abbreviation)"
+    },
+    {
+      "question": "What does Express extend from Node's core objects?",
+      "answers": [
+        "http.IncomingMessage and http.ServerResponse",
+        "http.Client and http.Server",
+        "http.Request and http.Response",
+        "http.InStream and http.OutStream"
+      ],
+      "correctAnswer": "http.IncomingMessage and http.ServerResponse"
+    },
+    {
+      "question": "What does localhost refer to?",
+      "answers": [
+        "The nearest DNS server",
+        "Your company's local network",
+        "The cloud hosting server",
+        "The computer you're currently using"
+      ],
+      "correctAnswer": "The computer you're currently using"
+    },
+    {
+      "question": "Which file does npm use to manage project dependencies and metadata?",
+      "answers": [
+        "dependencies.json",
+        "package.json",
+        "npm.json",
+        "project.json"
+      ],
+      "correctAnswer": "package.json"
+    }
+  ]

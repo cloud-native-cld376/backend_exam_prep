@@ -1,0 +1,202 @@
+[
+    {
+      "question": "What is Continuous Integration (CI)?",
+      "answers": [
+        "A meeting held every morning to discuss integration.",
+        "A process where developers integrate code into a shared repository frequently, usually verified by automated builds and tests.",
+        "The practice of writing code continuously without breaks.",
+        "A tool that automatically deploys code to production without testing."
+      ],
+      "correctAnswer": "A process where developers integrate code into a shared repository frequently, usually verified by automated builds and tests."
+    },
+    {
+      "question": "In the context of Unit Testing, what is mocking?",
+      "answers": [
+        "Creating fake versions of external dependencies (like databases) to isolate the code being tested.",
+        "Copying code from production to development.",
+        "Running tests in a virtual machine.",
+        "Making fun of bad code to encourage improvements."
+      ],
+      "correctAnswer": "Creating fake versions of external dependencies (like databases) to isolate the code being tested."
+    },
+    {
+      "question": "When writing a unit test, what is an assertion?",
+      "answers": [
+        "An error message returned by a failed test.",
+        "A statement that declares what the expected outcome of a test should be.",
+        "The command used to run the test suite.",
+        "A comment explaining the code."
+      ],
+      "correctAnswer": "A statement that declares what the expected outcome of a test should be."
+    },
+    {
+      "question": "What is the correct npm command to install Jest as a development dependency?",
+      "answers": [
+        "npm install -g jest-cli",
+        "npm install --save-dev jest",
+        "npm install jest",
+        "npm global install jest"
+      ],
+      "correctAnswer": "npm install --save-dev jest"
+    },
+    {
+      "question": "What does Code Coverage measure?",
+      "answers": [
+        "The percentage of lines of code that are executed during the test suite.",
+        "The number of bugs found in the code.",
+        "How many browsers the website supports.",
+        "The number of tests written per developer."
+      ],
+      "correctAnswer": "The percentage of lines of code that are executed during the test suite."
+    },
+    {
+      "question": "Why did the author choose Jest over other frameworks like Mocha or Jasmine?",
+      "answers": [
+        "It is the oldest and most stable framework.",
+        "It offers the best overall experience and is an excellent general-purpose framework.",
+        "It is the only framework that supports React.",
+        "It is built directly into Node.js."
+      ],
+      "correctAnswer": "It offers the best overall experience and is an excellent general-purpose framework."
+    },
+    {
+      "question": "Which principle of maintenance is closely related to Continuous Integration?",
+      "answers": [
+        "Use an Issue Tracker.",
+        "Prevent \"Invisible\" Failures.",
+        "Monitor Analytics.",
+        "Don't Procrastinate."
+      ],
+      "correctAnswer": "Prevent \"Invisible\" Failures."
+    },
+    {
+      "question": "Which of the following is a potential downside of Integration Testing mentioned?",
+      "answers": [
+        "They provide no value.",
+        "They are typically more complicated to set up and maintain than unit tests.",
+        "They only work on Windows.",
+        "They cannot be automated."
+      ],
+      "correctAnswer": "They are typically more complicated to set up and maintain than unit tests."
+    },
+    {
+      "question": "What is the primary argument the author makes regarding the value of Quality Assurance (QA)?",
+      "answers": [
+        "It is only necessary for large enterprise teams.",
+        "It prevents the need for future maintenance.",
+        "It ensures the project is completed under budget.",
+        "\"Practice makes permanent,\" so practicing proper QA builds good habits."
+      ],
+      "correctAnswer": "\"Practice makes permanent,\" so practicing proper QA builds good habits."
+    },
+    {
+      "question": "Which tool does the book recommend for linting?",
+      "answers": [
+        "JSLint",
+        "StyleLint",
+        "Prettier",
+        "ESLint"
+      ],
+      "correctAnswer": "ESLint"
+    },
+    {
+      "question": "Why does the author recommend delineating Logic from Presentation?",
+      "answers": [
+        "It allows Logic to be tested more easily with unit tests.",
+        "It allows designers to write backend code.",
+        "It makes the website load faster.",
+        "It prevents the need for integration testing."
+      ],
+      "correctAnswer": "It allows Logic to be tested more easily with unit tests."
+    },
+    {
+      "question": "What is Test-Driven Development (TDD)?",
+      "answers": [
+        "Using only automated tools to generate code.",
+        "Writing tests before writing the code that satisfies them.",
+        "Writing tests after the code is fully deployed.",
+        "Letting the QA team write all the code."
+      ],
+      "correctAnswer": "Writing tests before writing the code that satisfies them."
+    },
+    {
+      "question": "What is the primary purpose of Linting?",
+      "answers": [
+        "To compile the code into binary.",
+        "To automatically fix all logic bugs.",
+        "To minify the JavaScript code for production.",
+        "To identify potential errors and fragile constructs in the code."
+      ],
+      "correctAnswer": "To identify potential errors and fragile constructs in the code."
+    },
+    {
+      "question": "Why might you need to refactor an application for testability?",
+      "answers": [
+        "Because logic and presentation are too tightly coupled, making it hard to test logic in isolation.",
+        "Because Jest only works with modern JavaScript.",
+        "Because the file names are incorrect.",
+        "Because the code is too old."
+      ],
+      "correctAnswer": "Because logic and presentation are too tightly coupled, making it hard to test logic in isolation."
+    },
+    {
+      "question": "Which statement best describes the difference between \"Logic\" and \"Presentation\" as defined in the text?",
+      "answers": [
+        "Logic involves HTML/CSS, while Presentation involves JavaScript.",
+        "Presentation is easier to test than Logic.",
+        "Logic is the \"pure intellectual domain\" (business rules), while Presentation is how it is displayed to the user.",
+        "Logic and Presentation should always be mixed in the same file for efficiency."
+      ],
+      "correctAnswer": "Logic is the \"pure intellectual domain\" (business rules), while Presentation is how it is displayed to the user."
+    },
+    {
+      "question": "What is the \"ultimate\" integration test for a web application described in the book?",
+      "answers": [
+        "Reading the source code line-by-line.",
+        "Validating the database schema.",
+        "Rendering the app in a browser, manipulating it, and verifying behavior.",
+        "Checking if the server starts without crashing."
+      ],
+      "correctAnswer": "Rendering the app in a browser, manipulating it, and verifying behavior."
+    },
+    {
+      "question": "According to the chapter, which of the following is NOT one of the four key dimensions of a comprehensive QA plan?",
+      "answers": [
+        "Code Complexity",
+        "Functionality",
+        "Aesthetics",
+        "SEO (Search Engine Optimization)"
+      ],
+      "correctAnswer": "SEO (Search Engine Optimization)"
+    },
+    {
+      "question": "Which type of test is described as \"very fine-grained,\" testing single components to ensure they function properly?",
+      "answers": [
+        "Integration Testing",
+        "Acceptance Testing",
+        "Unit Testing",
+        "System Testing"
+      ],
+      "correctAnswer": "Unit Testing"
+    },
+    {
+      "question": "Which testing tool is primarily used in this book for Integration Testing?",
+      "answers": [
+        "ESLint",
+        "Puppeteer",
+        "Mocha",
+        "Travis CI"
+      ],
+      "correctAnswer": "Puppeteer"
+    },
+    {
+      "question": "How does Integration Testing differ from Unit Testing?",
+      "answers": [
+        "It is faster and easier to set up.",
+        "It focuses only on the visual design of the website.",
+        "It does not require any tools.",
+        "It tests the interaction between multiple components or the whole system."
+      ],
+      "correctAnswer": "It tests the interaction between multiple components or the whole system."
+    }
+  ]

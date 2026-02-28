@@ -1,0 +1,202 @@
+[
+    {
+      "question": "If you modify code directly inside the node_modules directory, what is the likely outcome?",
+      "answers": [
+        "Your changes will be lost the next time npm install is run.",
+        "Your changes will be permanently saved to the npm registry.",
+        "npm will automatically create a fork of the package.",
+        "The application will immediately crash."
+      ],
+      "correctAnswer": "Your changes will be lost the next time npm install is run."
+    },
+    {
+      "question": "Which of the following best describes \"Encapsulation\" in the context of Node modules?",
+      "answers": [
+        "Hiding implementation details and only exposing necessary functionality.",
+        "Compressing files to save space.",
+        "Making all variables global so they are easy to access.",
+        "Combining all CSS and JavaScript into a single file."
+      ],
+      "correctAnswer": "Hiding implementation details and only exposing necessary functionality."
+    },
+    {
+      "question": "What is the purpose of the package-lock.json file created by newer versions of npm?",
+      "answers": [
+        "To lock the project directory from write access.",
+        "To prevent other users from installing the package.",
+        "To record the exact versions of dependencies that were installed.",
+        "To store the project's API keys securely."
+      ],
+      "correctAnswer": "To record the exact versions of dependencies that were installed."
+    },
+    {
+      "question": "Which of the following is NOT listed as a primary benefit of using version control?",
+      "answers": [
+        "Documentation",
+        "Automatic Code Optimization",
+        "Attribution",
+        "Experimentation"
+      ],
+      "correctAnswer": "Automatic Code Optimization"
+    },
+    {
+      "question": "The phrase \"practice makes permanent\" implies that:",
+      "answers": [
+        "Coding speed is more important than code quality.",
+        "Practicing bad habits will make those bad habits automatic.",
+        "Repeating an action leads to perfection regardless of quality.",
+        "You should only practice when you have free time."
+      ],
+      "correctAnswer": "Practicing bad habits will make those bad habits automatic."
+    },
+    {
+      "question": "What is the purpose of the README.md file?",
+      "answers": [
+        "To configure the database connection.",
+        "To store the project's source code.",
+        "To provide a roadmap, architectural overview, and critical information for the project.",
+        "To list the project's dependencies in JSON format."
+      ],
+      "correctAnswer": "To provide a roadmap, architectural overview, and critical information for the project."
+    },
+    {
+      "question": "Why does the author prefer naming the main application file after the project (e.g., meadowlark.js) instead of index.js or app.js?",
+      "answers": [
+        "It improves application performance.",
+        "It is required by npm.",
+        "It avoids confusion when multiple editor tabs are open.",
+        "It is a requirement for Express scaffolding."
+      ],
+      "correctAnswer": "It avoids confusion when multiple editor tabs are open."
+    },
+    {
+      "question": "How does Node know to look for a module in the node_modules directory?",
+      "answers": [
+        "When the import path does not contain a directory prefix like ./ or /.",
+        "When the import path starts with ./.",
+        "When the file extension is omitted.",
+        "When the import path starts with /."
+      ],
+      "correctAnswer": "When the import path does not contain a directory prefix like ./ or /."
+    },
+    {
+      "question": "What is the correct way to handle a bug in an open-source package your project depends on?",
+      "answers": [
+        "Ignore the bug and write a workaround.",
+        "Edit the file in node_modules and commit it.",
+        "Fork the package, fix it, and use your fork (or submit a PR).",
+        "Copy the code into your project and rename it."
+      ],
+      "correctAnswer": "Fork the package, fix it, and use your fork (or submit a PR)."
+    },
+    {
+      "question": "What is the purpose of the .gitignore file?",
+      "answers": [
+        "To list packages that npm should not install.",
+        "To specify files and directories that Git should ignore by default.",
+        "To list files that should be deleted from the system.",
+        "To store sensitive passwords and API keys."
+      ],
+      "correctAnswer": "To specify files and directories that Git should ignore by default."
+    },
+    {
+      "question": "Why does the author recommend adding node_modules to the .gitignore file?",
+      "answers": [
+        "It contains personal user data.",
+        "Git cannot handle large numbers of files.",
+        "It is a derived artifact that can be regenerated with npm install.",
+        "It causes security vulnerabilities in the repository."
+      ],
+      "correctAnswer": "It is a derived artifact that can be regenerated with npm install."
+    },
+    {
+      "question": "What is the \"entry point\" of a Node application?",
+      "answers": [
+        "The .gitignore file.",
+        "The node_modules directory.",
+        "The first HTML file loaded by the browser.",
+        "The main JavaScript file that starts the application (e.g., meadowlark.js)."
+      ],
+      "correctAnswer": "The main JavaScript file that starts the application (e.g., meadowlark.js)."
+    },
+    {
+      "question": "What markup format is typically used for the README file?",
+      "answers": [
+        "Markdown",
+        "JSON",
+        "XML",
+        "HTML"
+      ],
+      "correctAnswer": "Markdown"
+    },
+    {
+      "question": "When importing a local module you created (e.g., fortune.js in a lib directory), how should you reference it?",
+      "answers": [
+        "require('./lib/fortune')",
+        "require('lib/fortune')",
+        "import fortune from 'npm'",
+        "require('fortune')"
+      ],
+      "correctAnswer": "require('./lib/fortune')"
+    },
+    {
+      "question": "Which Git command is recommended to add all current changes (including deletions) to the staging area?",
+      "answers": [
+        "git stage -all",
+        "git add -A",
+        "git add .",
+        "git commit -a"
+      ],
+      "correctAnswer": "git add -A"
+    },
+    {
+      "question": "In semantic versioning, what does the \"PATCH\" increment (the last number, e.g., the 5 in 2.0.5) represent?",
+      "answers": [
+        "New features that are backward compatible.",
+        "A complete rewrite of the software.",
+        "Minor changes or bug fixes that shouldn't impact compatibility.",
+        "Major breaking changes."
+      ],
+      "correctAnswer": "Minor changes or bug fixes that shouldn't impact compatibility."
+    },
+    {
+      "question": "According to the author, where do most source code files typically reside in real-world projects to prevent clutter in the project root?",
+      "answers": [
+        "public directory",
+        "bin directory",
+        "src directory",
+        "lib directory"
+      ],
+      "correctAnswer": "src directory"
+    },
+    {
+      "question": "In the context of Node modules, what is the role of module.exports or exports?",
+      "answers": [
+        "To import external libraries.",
+        "To define global variables for the entire application.",
+        "To make functionality visible outside of the module.",
+        "To delete variables from memory."
+      ],
+      "correctAnswer": "To make functionality visible outside of the module."
+    },
+    {
+      "question": "Which file is typically found in the project root and is used to manage project dependencies and metadata?",
+      "answers": [
+        "index.html",
+        "config.xml",
+        "package.json",
+        "manifest.json"
+      ],
+      "correctAnswer": "package.json"
+    },
+    {
+      "question": "What does the caret symbol (^) indicate when placed before a version number in package.json (e.g., ^4.16.4)?",
+      "answers": [
+        "It allows updates to any version that does not increment the major version number.",
+        "It indicates the package is deprecated.",
+        "It locks the dependency to that exact version.",
+        "It allows updates to any version that does not increment the minor version number."
+      ],
+      "correctAnswer": "It allows updates to any version that does not increment the major version number."
+    }
+  ]
