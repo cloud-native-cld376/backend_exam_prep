@@ -167,7 +167,7 @@
         "New Package Manager",
         "Node Package Manager"
       ],
-      "correctAnswer": "npm is not an acronym (recursive abbreviation)"
+      "correctAnswer": "Node Package Manager"
     },
     {
       "question": "What does Express extend from Node's core objects?",

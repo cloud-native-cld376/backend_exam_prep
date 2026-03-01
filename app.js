@@ -29,6 +29,7 @@
   const resultsPanel = $('results-panel');
   const scoreDisplay = $('score-display');
   const scoreDetail = $('score-detail');
+  const resultsReview = $('results-review');
   const btnRestart = $('btn-restart');
   const btnBackToMenu = $('btn-back-to-menu');
   const viewAllPanel = $('view-all-panel');
@@ -291,16 +292,48 @@
 
     const total = state.questions.length;
     scoreDisplay.innerHTML = `${correct} <span class="total">/ ${total}</span>`;
-    let detailHtml = `<p>You got <strong>${correct}</strong> out of <strong>${total}</strong> correct.</p>`;
-    const wrongOnes = results.filter((r) => !r.right);
-    if (wrongOnes.length > 0) {
-      detailHtml += '<p>Incorrect:</p><ul>';
-      wrongOnes.forEach((r) => {
-        detailHtml += `<li class="wrong-item">${escapeHtml(r.question)} — correct: ${escapeHtml(r.correctAnswer)}</li>`;
-      });
-      detailHtml += '</ul>';
+    const scoreDetailEl = scoreDetail;
+    if (scoreDetailEl) {
+      scoreDetailEl.innerHTML = `<p>You got <strong>${correct}</strong> out of <strong>${total}</strong> correct.</p>`;
     }
-    scoreDetail.innerHTML = detailHtml;
+
+    if (resultsReview) {
+      resultsReview.innerHTML = '';
+      const list = document.createElement('div');
+      list.className = 'results-review-list';
+      results.forEach((r, idx) => {
+        const item = document.createElement('div');
+        item.className = 'result-item' + (r.right ? ' result-item-right' : ' result-item-wrong');
+        const header = document.createElement('div');
+        header.className = 'result-item-header';
+        const badge = document.createElement('span');
+        badge.className = 'result-badge' + (r.right ? ' result-badge-right' : ' result-badge-wrong');
+        badge.textContent = r.right ? 'Correct' : 'Wrong';
+        const num = document.createElement('span');
+        num.className = 'result-item-num';
+        num.textContent = (idx + 1) + '.';
+        header.appendChild(num);
+        header.appendChild(badge);
+        item.appendChild(header);
+        const qEl = document.createElement('div');
+        qEl.className = 'result-item-question';
+        qEl.textContent = r.question;
+        item.appendChild(qEl);
+        const yourEl = document.createElement('div');
+        yourEl.className = 'result-item-your';
+        yourEl.innerHTML = '<strong>Your answer:</strong> ' + (r.chosen ? escapeHtml(r.chosen) : '<em>No answer</em>');
+        item.appendChild(yourEl);
+        if (!r.right) {
+          const correctEl = document.createElement('div');
+          correctEl.className = 'result-item-correct';
+          correctEl.innerHTML = '<strong>Correct answer:</strong> ' + escapeHtml(r.correctAnswer);
+          item.appendChild(correctEl);
+        }
+        list.appendChild(item);
+      });
+      resultsReview.appendChild(list);
+    }
+
     showPanel(resultsPanel);
   }
 
