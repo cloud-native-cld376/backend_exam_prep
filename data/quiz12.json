@@ -1,0 +1,202 @@
+[
+    {
+      "question": "In the context of Chapter 14, what is \"Route separation\"?",
+      "answers": [
+        "Separating the HTML from the CSS",
+        "Physical distance between servers",
+        "Deleting old routes",
+        "Moving routing logic out of the main application file into separate files"
+      ],
+      "correctAnswer": "Moving routing logic out of the main application file into separate files"
+    },
+    {
+      "question": "Which method is used on the response object to send a user to a different URL?",
+      "answers": [
+        "res.move()",
+        "res.forward()",
+        "res.redirect()",
+        "res.goto()"
+      ],
+      "correctAnswer": "res.redirect()"
+    },
+    {
+      "question": "Why is it important to place the 404 handler after all other routes?",
+      "answers": [
+        "It makes the 404 page load faster",
+        "Because Express sorts routes by name",
+        "So it only executes if no other route matches",
+        "It doesn't matter where it is placed"
+      ],
+      "correctAnswer": "So it only executes if no other route matches"
+    },
+    {
+      "question": "Can route parameters contain hyphens (-) or dots (.)?",
+      "answers": [
+        "No, they break the URL",
+        "Only if escaped with a backslash",
+        "Yes, they are interpreted literally between parameters",
+        "No, only letters"
+      ],
+      "correctAnswer": "Yes, they are interpreted literally between parameters"
+    },
+    {
+      "question": "What is the result of req.params.id if the route is /user/:id and the URL is /user/42?",
+      "answers": [
+        "42",
+        "undefined",
+        "/user/42",
+        "id"
+      ],
+      "correctAnswer": "42"
+    },
+    {
+      "question": "What is the purpose of the app.route() method?",
+      "answers": [
+        "To create chainable route handlers for a single route path",
+        "To restart the routing engine",
+        "To define a physical path on the disk",
+        "To list all active routes"
+      ],
+      "correctAnswer": "To create chainable route handlers for a single route path"
+    },
+    {
+      "question": "If you define a route /user(name)?, which URLs will match?",
+      "answers": [
+        "Only /username",
+        "Neither",
+        "Both /user and /username",
+        "Only /user"
+      ],
+      "correctAnswer": "Both /user and /username"
+    },
+    {
+      "question": "In a route path like /staff/:city/:name, what represents a route parameter?",
+      "answers": [
+        "/staff/",
+        "The whole string",
+        ":city and :name",
+        "Only the slashes"
+      ],
+      "correctAnswer": ":city and :name"
+    },
+    {
+      "question": "When using res.render('profile', { name: 'Node' }), what is the second argument?",
+      "answers": [
+        "The layout file",
+        "The callback function",
+        "The status code",
+        "The context object (data passed to the view)"
+      ],
+      "correctAnswer": "The context object (data passed to the view)"
+    },
+    {
+      "question": "Which character is used in an Express route path to make the preceding character optional?",
+      "answers": [
+        "?",
+        "$",
+        "+",
+        "*"
+      ],
+      "correctAnswer": "?"
+    },
+    {
+      "question": "Chapter 14 discusses using Regular Expressions in routes. How are they passed to app.get()?",
+      "answers": [
+        "As a RegExp literal (e.g., /^/user$/)",
+        "As a string inside quotes",
+        "Inside a JSON object",
+        "They cannot be used directly"
+      ],
+      "correctAnswer": "As a RegExp literal (e.g., /^/user$/)"
+    },
+    {
+      "question": "Where are route parameters stored in the Express request object?",
+      "answers": [
+        "req.query",
+        "req.headers",
+        "req.params",
+        "req.body"
+      ],
+      "correctAnswer": "req.params"
+    },
+    {
+      "question": "How do you access the query string (e.g., ?sort=asc) in a route handler?",
+      "answers": [
+        "req.body",
+        "req.search",
+        "req.query",
+        "req.params"
+      ],
+      "correctAnswer": "req.query"
+    },
+    {
+      "question": "Can you pass an array of functions as the second argument to app.get()?",
+      "answers": [
+        "Only in development mode",
+        "No, only one function",
+        "Yes, they will execute in sequence",
+        "Only if the array contains strings"
+      ],
+      "correctAnswer": "Yes, they will execute in sequence"
+    },
+    {
+      "question": "What is the \"Redirection\" status code typically used for a permanent move?",
+      "answers": [
+        "404",
+        "301",
+        "302",
+        "500"
+      ],
+      "correctAnswer": "301"
+    },
+    {
+      "question": "What does the + character signify in an Express route path?",
+      "answers": [
+        "It ends the route",
+        "Matches the preceding character one or more times",
+        "It is a mathematical addition operator",
+        "Matches the preceding character zero or more times"
+      ],
+      "correctAnswer": "Matches the preceding character one or more times"
+    },
+    {
+      "question": "Chapter 14 mentions \"Automatic Views.\" What does this concept refer to?",
+      "answers": [
+        "Views that write themselves",
+        "CSS that changes based on the user",
+        "A pattern where routes are automatically generated based on view file names",
+        "Views that update in real-time"
+      ],
+      "correctAnswer": "A pattern where routes are automatically generated based on view file names"
+    },
+    {
+      "question": "If a sub-router is mounted at /admin and has a route .get('/users'), what is the full URL?",
+      "answers": [
+        "/admin/users",
+        "/users/admin",
+        "/admin",
+        "/users"
+      ],
+      "correctAnswer": "/admin/users"
+    },
+    {
+      "question": "Which of these is a valid way to handle a POST request to /signup?",
+      "answers": [
+        "app.post('/signup', ...)",
+        "app.get('/signup', ...)",
+        "app.put('/signup', ...)",
+        "app.use('/signup', ...)"
+      ],
+      "correctAnswer": "app.post('/signup', ...)"
+    },
+    {
+      "question": "How does Express handle a route defined with a wildcard *?",
+      "answers": [
+        "It matches exactly one character",
+        "It causes a syntax error",
+        "It only matches file extensions",
+        "It matches any character sequence"
+      ],
+      "correctAnswer": "It matches any character sequence"
+    }
+  ]

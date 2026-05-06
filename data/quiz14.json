@@ -1,0 +1,202 @@
+[
+    {
+      "question": "Which JavaScript framework is NOT primarily used for building SPAs?",
+      "answers": [
+        "Vue",
+        "Express",
+        "React",
+        "Angular"
+      ],
+      "correctAnswer": "Express"
+    },
+    {
+      "question": "Why should \"state-changing\" API methods (POST, PUT, DELETE) always require a CSRF token?",
+      "answers": [
+        "To make the code look more complex",
+        "To track how many times a user clicks a button",
+        "Because GET requests are generally considered safe and shouldn't change data, whereas these methods modify server state",
+        "To prevent the database from filling up"
+      ],
+      "correctAnswer": "Because GET requests are generally considered safe and shouldn't change data, whereas these methods modify server state"
+    },
+    {
+      "question": "In an SPA, what does the server usually send in response to the very first request?",
+      "answers": [
+        "A raw CSV file",
+        "A complete set of all possible HTML pages",
+        "A large PDF document",
+        "A minimal HTML file, CSS, and a large JavaScript bundle"
+      ],
+      "correctAnswer": "A minimal HTML file, CSS, and a large JavaScript bundle"
+    },
+    {
+      "question": "What is Cross-Site Request Forgery (CSRF)?",
+      "answers": [
+        "A type of virus that infects the user's OS",
+        "A way to steal passwords via a fake login page",
+        "An attack where the user's data is deleted by the server",
+        "An attack that tricks a logged-in user's browser into sending a malicious request to a web app"
+      ],
+      "correctAnswer": "An attack that tricks a logged-in user's browser into sending a malicious request to a web app"
+    },
+    {
+      "question": "Why might a developer choose JWT (JSON Web Tokens) over Sessions for an SPA?",
+      "answers": [
+        "JWT is \"stateless,\" meaning the server doesn't need to store session data in a database",
+        "JWT only works with React",
+        "JWT is much larger than a cookie",
+        "JWT is easier to read for humans"
+      ],
+      "correctAnswer": "JWT is \"stateless,\" meaning the server doesn't need to store session data in a database"
+    },
+    {
+      "question": "How does an SPA handle a 404 error if the user types an invalid URL?",
+      "answers": [
+        "The browser shows a built-in error",
+        "The server sends a 404 page",
+        "The website crashes",
+        "The client-side router detects the mismatch and renders a \"Not Found\" component"
+      ],
+      "correctAnswer": "The client-side router detects the mismatch and renders a \"Not Found\" component"
+    },
+    {
+      "question": "What is the most common defense against CSRF mentioned in the context of Node/Express?",
+      "answers": [
+        "Disabling all cookies",
+        "Encrypting the entire database",
+        "Forcing users to solve a CAPTCHA for every click",
+        "Using CSRF tokens that the client must include in \"state-changing\" requests (POST, PUT, DELETE)"
+      ],
+      "correctAnswer": "Using CSRF tokens that the client must include in \"state-changing\" requests (POST, PUT, DELETE)"
+    },
+    {
+      "question": "Which of the following is a common challenge for SPAs mentioned in Chapter 16?",
+      "answers": [
+        "They cannot display images",
+        "They require a special browser",
+        "They are incompatible with CSS",
+        "Search Engine Optimization (SEO) for content rendered only via JS"
+      ],
+      "correctAnswer": "Search Engine Optimization (SEO) for content rendered only via JS"
+    },
+    {
+      "question": "What is the purpose of the HttpOnly flag on a session cookie?",
+      "answers": [
+        "It prevents client-side JavaScript from accessing the cookie, reducing the risk of XSS attacks",
+        "It deletes the cookie when the browser closes",
+        "It makes the cookie work only on mobile phones",
+        "It forces the cookie to be sent over HTTP only (no HTTPS)"
+      ],
+      "correctAnswer": "It prevents client-side JavaScript from accessing the cookie, reducing the risk of XSS attacks"
+    },
+    {
+      "question": "What is a \"Preflight Request\" (OPTIONS) in the context of SPA security?",
+      "answers": [
+        "A request to check if the server is online",
+        "A way to download CSS before HTML",
+        "A request that clears the user's cache",
+        "A request sent by the browser to check if the server allows a cross-origin request before sending the actual data"
+      ],
+      "correctAnswer": "A request sent by the browser to check if the server allows a cross-origin request before sending the actual data"
+    },
+    {
+      "question": "Why is an SPA potentially more vulnerable to CSRF when using session-based authentication?",
+      "answers": [
+        "Because the browser automatically attaches session cookies to all API requests, even if initiated from a different site",
+        "Because SPAs don't use encryption",
+        "Because SPAs lack a backend",
+        "Because JavaScript is inherently insecure"
+      ],
+      "correctAnswer": "Because the browser automatically attaches session cookies to all API requests, even if initiated from a different site"
+    },
+    {
+      "question": "Which browser API is primarily responsible for allowing SPAs to change the URL without a page reload?",
+      "answers": [
+        "The Web Storage API",
+        "The Fetch API",
+        "The History API (pushState)",
+        "The Canvas API"
+      ],
+      "correctAnswer": "The History API (pushState)"
+    },
+    {
+      "question": "In an SPA-Backend architecture, how is a CSRF token typically provided to the frontend?",
+      "answers": [
+        "It is often sent in a cookie or as a custom header during the initial load or a login request",
+        "It is not needed if you use HTTPS",
+        "It is sent in a plain text email",
+        "It is hard-coded into the JavaScript bundle"
+      ],
+      "correctAnswer": "It is often sent in a cookie or as a custom header during the initial load or a login request"
+    },
+    {
+      "question": "Why is \"State Management\" more complex in an SPA?",
+      "answers": [
+        "Because the browser deletes variables frequently",
+        "Because of the file system limits",
+        "Because the app lives for a long time and must track data across many interactions",
+        "Because JavaScript doesn't support variables"
+      ],
+      "correctAnswer": "Because the app lives for a long time and must track data across many interactions"
+    },
+    {
+      "question": "What is \"Client-Side Routing\" in an SPA?",
+      "answers": [
+        "Routing performed by the physical router in the home",
+        "A way to speed up the internet connection",
+        "Routing handled exclusively by Nginx",
+        "Managing the URL and navigation within the browser via JavaScript"
+      ],
+      "correctAnswer": "Managing the URL and navigation within the browser via JavaScript"
+    },
+    {
+      "question": "What is the fundamental difference between a traditional web app and a Single-Page Application (SPA)?",
+      "answers": [
+        "SPAs cannot connect to databases",
+        "SPAs don't use HTML",
+        "SPAs load a single HTML page and dynamically update content without full page reloads",
+        "Traditional apps are faster"
+      ],
+      "correctAnswer": "SPAs load a single HTML page and dynamically update content without full page reloads"
+    },
+    {
+      "question": "Why are \"Loading Spinners\" more common in SPAs?",
+      "answers": [
+        "To make the site look busy",
+        "To indicate that data is being fetched asynchronously behind the scenes",
+        "It is a requirement of HTML5",
+        "Because SPAs are generally slower than traditional sites"
+      ],
+      "correctAnswer": "To indicate that data is being fetched asynchronously behind the scenes"
+    },
+    {
+      "question": "Which architectural pattern is often used by SPAs to interact with the server?",
+      "answers": [
+        "REST or GraphQL APIs",
+        "Direct SQL queries from the browser",
+        "FTP file transfers",
+        "SOAP XML Services"
+      ],
+      "correctAnswer": "REST or GraphQL APIs"
+    },
+    {
+      "question": "What is the main advantage of an SPA regarding \"Perceived Performance\"?",
+      "answers": [
+        "It works without an internet connection",
+        "It uses less RAM",
+        "The UI feels more responsive because transitions happen immediately without \"white flashes\"",
+        "It doesn't require a web server"
+      ],
+      "correctAnswer": "The UI feels more responsive because transitions happen immediately without \"white flashes\""
+    },
+    {
+      "question": "What is \"Session Authentication\" in the context of an SPA and Node.js?",
+      "answers": [
+        "A way to speed up the internet connection",
+        "The server stores session data in memory or a database and tracks the user via a Session ID cookie",
+        "Storing the user's password in the browser's RAM",
+        "Authenticating the user only once per year"
+      ],
+      "correctAnswer": "The server stores session data in memory or a database and tracks the user via a Session ID cookie"
+    }
+  ]

@@ -1,0 +1,202 @@
+[
+    {
+      "question": "What is a common practice for maintaining backward compatibility when updating an API's structure?",
+      "answers": [
+        "Versioning the API, typically in the URL path (e.g., /api/v1/).",
+        "Returning a 301 redirect to all outdated applications.",
+        "Switching from JSON to XML payloads.",
+        "Deleting the old endpoints immediately to force upgrades."
+      ],
+      "correctAnswer": "Versioning the API, typically in the URL path (e.g., /api/v1/)."
+    },
+    {
+      "question": "Which HTTP method is conventionally used to retrieve an existing resource from a REST API?",
+      "answers": [
+        "GET",
+        "PUT",
+        "POST",
+        "DELETE"
+      ],
+      "correctAnswer": "GET"
+    },
+    {
+      "question": "Which of the following HTTP methods is generally NOT considered idempotent?",
+      "answers": [
+        "PUT",
+        "POST",
+        "GET",
+        "DELETE"
+      ],
+      "correctAnswer": "POST"
+    },
+    {
+      "question": "How do you access route parameters (e.g., the id in /api/users/:id) in an Express API route?",
+      "answers": [
+        "req.body.id",
+        "req.params.id",
+        "req.url.id",
+        "req.query.id"
+      ],
+      "correctAnswer": "req.params.id"
+    },
+    {
+      "question": "Which HTTP method is specifically designed for applying partial modifications to a resource?",
+      "answers": [
+        "PUT",
+        "UPDATE",
+        "PATCH",
+        "POST"
+      ],
+      "correctAnswer": "PATCH"
+    },
+    {
+      "question": "What HTTP status code is appropriate when a user attempts an action they are not authenticated to perform?",
+      "answers": [
+        "404 Not Found",
+        "400 Bad Request",
+        "405 Method Not Allowed",
+        "401 Unauthorized"
+      ],
+      "correctAnswer": "401 Unauthorized"
+    },
+    {
+      "question": "What HTTP header is used by the client to indicate what media types it is willing to receive from the API?",
+      "answers": [
+        "Content-Type",
+        "Allow-Media",
+        "Receive-Type",
+        "Accept"
+      ],
+      "correctAnswer": "Accept"
+    },
+    {
+      "question": "Which HTTP status code indicates a generic client-side error, such as malformed JSON syntax in the request body?",
+      "answers": [
+        "502 Bad Gateway",
+        "400 Bad Request",
+        "500 Internal Server Error",
+        "403 Forbidden"
+      ],
+      "correctAnswer": "400 Bad Request"
+    },
+    {
+      "question": "When an Express server encounters an unhandled exception during an API request, what status code should ideally be returned by the error-handling middleware?",
+      "answers": [
+        "404 Not Found",
+        "500 Internal Server Error",
+        "503 Service Unavailable",
+        "400 Bad Request"
+      ],
+      "correctAnswer": "500 Internal Server Error"
+    },
+    {
+      "question": "Which built-in middleware is required in modern Express to parse incoming requests with JSON payloads?",
+      "answers": [
+        "app.use(express.parseJSON())",
+        "app.use(express.payload())",
+        "app.use(express.json())",
+        "app.use(body.json())"
+      ],
+      "correctAnswer": "app.use(express.json())"
+    },
+    {
+      "question": "Which HTTP method is standard for creating a new resource on the server?",
+      "answers": [
+        "DELETE",
+        "POST",
+        "PATCH",
+        "GET"
+      ],
+      "correctAnswer": "POST"
+    },
+    {
+      "question": "What is the purpose of CORS in web development?",
+      "answers": [
+        "To secure the database from SQL injection attacks.",
+        "To allow restricted resources on a web page to be requested from another domain.",
+        "To route traffic between multiple Express servers.",
+        "To compress JSON payloads for faster API response times."
+      ],
+      "correctAnswer": "To allow restricted resources on a web page to be requested from another domain."
+    },
+    {
+      "question": "What does it mean for an HTTP method to be \"idempotent\"?",
+      "answers": [
+        "It cannot modify server data.",
+        "It automatically parses JSON bodies.",
+        "It always returns a 200 status code.",
+        "Performing it multiple times has the same effect as performing it once."
+      ],
+      "correctAnswer": "Performing it multiple times has the same effect as performing it once."
+    },
+    {
+      "question": "Why might an API endpoint return a 204 No Content status code?",
+      "answers": [
+        "The database is empty and has no records to return.",
+        "The server crashed before it could compile the response body.",
+        "The client forgot to include a request body.",
+        "The request was successful, but there is no payload body to return."
+      ],
+      "correctAnswer": "The request was successful, but there is no payload body to return."
+    },
+    {
+      "question": "How do you access query string parameters (e.g., ?sort=asc) in an Express GET request?",
+      "answers": [
+        "req.query.sort",
+        "req.search.sort",
+        "req.params.sort",
+        "req.url.sort"
+      ],
+      "correctAnswer": "req.query.sort"
+    },
+    {
+      "question": "When accessing the parsed data of a POST request, which Express object property is used?",
+      "answers": [
+        "req.payload",
+        "req.content",
+        "req.data",
+        "req.body"
+      ],
+      "correctAnswer": "req.body"
+    },
+    {
+      "question": "What is meant by the \"stateless\" constraint in REST?",
+      "answers": [
+        "The server does not store any database records permanently.",
+        "The API does not require authentication.",
+        "No client context is stored on the server between requests.",
+        "The client must reconnect to the server continuously."
+      ],
+      "correctAnswer": "No client context is stored on the server between requests."
+    },
+    {
+      "question": "In an Express application, which method is explicitly used to send a JSON response to the client?",
+      "answers": [
+        "res.render(data, { json: true })",
+        "res.json(data)",
+        "res.sendJSON(data)",
+        "req.send(data, 'json')"
+      ],
+      "correctAnswer": "res.json(data)"
+    },
+    {
+      "question": "What is the recommended naming convention for resource URIs in a REST API?",
+      "answers": [
+        "Use verbs indicating actions (e.g., /api/getUsers).",
+        "Append the file extension to the endpoint (e.g., /api/users.json).",
+        "Use singular nouns exclusively (e.g., /api/user).",
+        "Use plural nouns for resource collections (e.g., /api/users)."
+      ],
+      "correctAnswer": "Use plural nouns for resource collections (e.g., /api/users)."
+    },
+    {
+      "question": "How does res.json() differ from res.send() when passing an object or array?",
+      "answers": [
+        "res.send() converts the data to XML instead of JSON.",
+        "res.json() sets the Content-Type header to application/json explicitly.",
+        "There is absolutely no difference; they are aliases.",
+        "res.send() throws an error if passed an object."
+      ],
+      "correctAnswer": "res.json() sets the Content-Type header to application/json explicitly."
+    }
+  ]

@@ -1,0 +1,202 @@
+[
+    {
+      "question": "To use signed cookies, what must be provided to the cookie-parser middleware?",
+      "answers": [
+        "A database URL",
+        "A username",
+        "A secret string",
+        "An SSL certificate"
+      ],
+      "correctAnswer": "A secret string"
+    },
+    {
+      "question": "In Express, which middleware is typically used to handle cookies?",
+      "answers": [
+        "express-session",
+        "cookie-parser",
+        "body-parser",
+        "morgan"
+      ],
+      "correctAnswer": "cookie-parser"
+    },
+    {
+      "question": "Why is session-based authentication often preferred over sending raw credentials with every request?",
+      "answers": [
+        "It is required by law",
+        "It is more secure than re-sending passwords and reduces server load",
+        "It is slower",
+        "It only works on mobile"
+      ],
+      "correctAnswer": "It is more secure than re-sending passwords and reduces server load"
+    },
+    {
+      "question": "When using cookie-parser, what is the functional difference between req.cookies and req.signedCookies?",
+      "answers": [
+        "req.cookies contains unsigned cookies; req.signedCookies contains cookies verified against a secret",
+        "There is no difference; they both hold the same data",
+        "req.cookies is for session IDs; req.signedCookies is for user data",
+        "req.cookies is for HTTPS; req.signedCookies is for HTTP"
+      ],
+      "correctAnswer": "req.cookies contains unsigned cookies; req.signedCookies contains cookies verified against a secret"
+    },
+    {
+      "question": "What is the main difference between a cookie and a session?",
+      "answers": [
+        "Cookies are stored on the client; session data is stored on the server",
+        "Sessions are stored on the client; cookies on the server",
+        "Sessions are only for login; cookies are only for ads",
+        "There is no difference"
+      ],
+      "correctAnswer": "Cookies are stored on the client; session data is stored on the server"
+    },
+    {
+      "question": "Which property should be set to true to ensure a cookie is only sent over encrypted connections?",
+      "answers": [
+        "path",
+        "httpOnly",
+        "signed",
+        "secure"
+      ],
+      "correctAnswer": "secure"
+    },
+    {
+      "question": "Why is the default MemoryStore for sessions discouraged for production?",
+      "answers": [
+        "It is too fast",
+        "It only works with Chrome",
+        "It is too secure",
+        "It causes memory leaks and doesn't support multiple server instances"
+      ],
+      "correctAnswer": "It causes memory leaks and doesn't support multiple server instances"
+    },
+    {
+      "question": "What is a \"Flash Message\" typically used for?",
+      "answers": [
+        "One-time notifications (e.g., \"Success!\") that disappear after being viewed",
+        "Faster page loading",
+        "Constant site-wide alerts",
+        "Background data syncing"
+      ],
+      "correctAnswer": "One-time notifications (e.g., \"Success!\") that disappear after being viewed"
+    },
+    {
+      "question": "What does the httpOnly flag on a cookie prevent?",
+      "answers": [
+        "Access via client-side JavaScript (XSS)",
+        "Access via HTTPS",
+        "Access via the server",
+        "Access via the terminal"
+      ],
+      "correctAnswer": "Access via client-side JavaScript (XSS)"
+    },
+    {
+      "question": "What is the purpose of the maxAge option in a cookie?",
+      "answers": [
+        "To determine how long the cookie lasts in milliseconds",
+        "To set the user's age",
+        "To limit the size of the cookie",
+        "To set the server's timeout"
+      ],
+      "correctAnswer": "To determine how long the cookie lasts in milliseconds"
+    },
+    {
+      "question": "Which of these is a recommended production-ready session store?",
+      "answers": [
+        "MemoryStore",
+        "Global variables",
+        "Redis or MongoDB",
+        "LocalStorage"
+      ],
+      "correctAnswer": "Redis or MongoDB"
+    },
+    {
+      "question": "What is the \"path\" option used for when setting a cookie?",
+      "answers": [
+        "The URL path for which the cookie is valid",
+        "The path to the logo image",
+        "The directory on the hard drive",
+        "The file path of the script"
+      ],
+      "correctAnswer": "The URL path for which the cookie is valid"
+    },
+    {
+      "question": "Which header is used by the browser to send cookies back to the server?",
+      "answers": [
+        "Set-Cookie",
+        "Cookie",
+        "Authorization",
+        "X-Auth-Token"
+      ],
+      "correctAnswer": "Cookie"
+    },
+    {
+      "question": "How do you clear or delete a cookie in Express?",
+      "answers": [
+        "res.remove('name')",
+        "res.delete('name')",
+        "res.clearCookie('name')",
+        "req.cookies.name = null"
+      ],
+      "correctAnswer": "res.clearCookie('name')"
+    },
+    {
+      "question": "In Express, where can you access the parsed cookies from an incoming request?",
+      "answers": [
+        "req.cookies",
+        "app.get('cookies')",
+        "res.cookies",
+        "req.parsedCookies"
+      ],
+      "correctAnswer": "req.cookies"
+    },
+    {
+      "question": "Which method is used to set a cookie in an Express response?",
+      "answers": [
+        "res.cookie()",
+        "app.cookie()",
+        "res.setCookie()",
+        "req.cookie()"
+      ],
+      "correctAnswer": "res.cookie()"
+    },
+    {
+      "question": "What happens to a session if the session ID cookie is deleted by the user?",
+      "answers": [
+        "The server sends the cookie back automatically",
+        "The server data is also deleted",
+        "The website crashes",
+        "The user is no longer associated with their session data"
+      ],
+      "correctAnswer": "The user is no longer associated with their session data"
+    },
+    {
+      "question": "What is a \"signed\" cookie in the context of Express?",
+      "answers": [
+        "A cookie that only works over HTTPS",
+        "A cookie encrypted so the client cannot read it",
+        "A cookie that requires a physical signature",
+        "A cookie that is digitally signed to detect client-side tampering"
+      ],
+      "correctAnswer": "A cookie that is digitally signed to detect client-side tampering"
+    },
+    {
+      "question": "Where are cookies actually stored?",
+      "answers": [
+        "In the server's database",
+        "In the server's RAM",
+        "On the client's browser/computer",
+        "In the middleware layer"
+      ],
+      "correctAnswer": "On the client's browser/computer"
+    },
+    {
+      "question": "By default, Express's express-session uses which type of storage?",
+      "answers": [
+        "Redis",
+        "Memory Store",
+        "Filesystem",
+        "MongoDB"
+      ],
+      "correctAnswer": "Memory Store"
+    }
+  ]

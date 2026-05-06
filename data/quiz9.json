@@ -1,0 +1,202 @@
+[
+    {
+      "question": "The express.static middleware is used for what purpose?",
+      "answers": [
+        "Encrypting passwords",
+        "Routing APIs",
+        "Database storage",
+        "Serving files like CSS/JS"
+      ],
+      "correctAnswer": "Serving files like CSS/JS"
+    },
+    {
+      "question": "In the middleware pipeline, what is the \"catch-all\" handler usually used for?",
+      "answers": [
+        "Home page",
+        "404 Not Found",
+        "Static files",
+        "500 Server Error"
+      ],
+      "correctAnswer": "404 Not Found"
+    },
+    {
+      "question": "Where is the body-parser data typically made available in the request?",
+      "answers": [
+        "req.headers",
+        "req.query",
+        "req.body",
+        "req.params"
+      ],
+      "correctAnswer": "req.body"
+    },
+    {
+      "question": "If you want a middleware to run on every request, how should you add it?",
+      "answers": [
+        "app.get('*')",
+        "app.post('/')",
+        "app.use()",
+        "app.all('/home')"
+      ],
+      "correctAnswer": "app.use()"
+    },
+    {
+      "question": "Which middleware would you use to handle browser cookies?",
+      "answers": [
+        "express-session",
+        "body-parser",
+        "serve-static",
+        "cookie-parser"
+      ],
+      "correctAnswer": "cookie-parser"
+    },
+    {
+      "question": "Why might you use express.Router in an application?",
+      "answers": [
+        "To replace Node",
+        "To speed up DB",
+        "To partition routes",
+        "To style views"
+      ],
+      "correctAnswer": "To partition routes"
+    },
+    {
+      "question": "What is the fundamental definition of middleware in the context of Express?",
+      "answers": [
+        "A function that handles requests and responses",
+        "A database query language",
+        "A hardware component",
+        "A front-end framework"
+      ],
+      "correctAnswer": "A function that handles requests and responses"
+    },
+    {
+      "question": "Which of these is a \"third-party\" middleware mentioned in the text?",
+      "answers": [
+        "req.body",
+        "cors",
+        "res.send",
+        "app.use"
+      ],
+      "correctAnswer": "cors"
+    },
+    {
+      "question": "What is the purpose of the next() function in middleware?",
+      "answers": [
+        "To render a view",
+        "To pass control to the next middleware",
+        "To connect to a database",
+        "To stop the server"
+      ],
+      "correctAnswer": "To pass control to the next middleware"
+    },
+    {
+      "question": "What is the primary difference between a route handler and general middleware?",
+      "answers": [
+        "Only middleware uses res",
+        "Middleware has paths",
+        "Routes have paths",
+        "Only routes use next"
+      ],
+      "correctAnswer": "Routes have paths"
+    },
+    {
+      "question": "Which middleware provides protection against Cross-Site Request Forgery?",
+      "answers": [
+        "csurf",
+        "helmet",
+        "passport",
+        "morgan"
+      ],
+      "correctAnswer": "csurf"
+    },
+    {
+      "question": "Error-handling middleware in Express is unique because it takes how many arguments?",
+      "answers": [
+        "3",
+        "1",
+        "4",
+        "2"
+      ],
+      "correctAnswer": "4"
+    },
+    {
+      "question": "Which middleware is typically used for logging requests in Express?",
+      "answers": [
+        "morgan",
+        "csurf",
+        "helmet",
+        "passport"
+      ],
+      "correctAnswer": "morgan"
+    },
+    {
+      "question": "What does the term \"middleware principle\" refer to?",
+      "answers": [
+        "Front-end UI",
+        "Hardware design",
+        "The pipeline pattern",
+        "Database schemas"
+      ],
+      "correctAnswer": "The pipeline pattern"
+    },
+    {
+      "question": "Why is next() crucial for modularity?",
+      "answers": [
+        "It restarts apps",
+        "It allows chainability",
+        "It compiles JS",
+        "It connects APIs"
+      ],
+      "correctAnswer": "It allows chainability"
+    },
+    {
+      "question": "Which middleware is commonly used to parse URL-encoded form data?",
+      "answers": [
+        "body-parser",
+        "cookie-parser",
+        "morgan",
+        "express-session"
+      ],
+      "correctAnswer": "body-parser"
+    },
+    {
+      "question": "Which of these can middleware NOT do?",
+      "answers": [
+        "Delete the database",
+        "Execute code",
+        "End the cycle",
+        "Change req/res"
+      ],
+      "correctAnswer": "Delete the database"
+    },
+    {
+      "question": "In Express, route handlers (like app.get) are considered what?",
+      "answers": [
+        "Middleware",
+        "Operating Systems",
+        "Databases",
+        "Compilers"
+      ],
+      "correctAnswer": "Middleware"
+    },
+    {
+      "question": "Order matters in middleware. If a 404 handler is placed before a valid route, what happens?",
+      "answers": [
+        "The 404 is triggered",
+        "The server crashes",
+        "The 404 is ignored",
+        "The route works"
+      ],
+      "correctAnswer": "The 404 is triggered"
+    },
+    {
+      "question": "What happens if a middleware function does not call next() or send a response?",
+      "answers": [
+        "The request hangs",
+        "It skips to the route",
+        "It deletes the request",
+        "The server restarts"
+      ],
+      "correctAnswer": "The request hangs"
+    }
+  ]

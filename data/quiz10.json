@@ -1,0 +1,176 @@
+[
+    {
+      "question": "Why is HTML email difficult to implement?",
+      "answers": [
+        "Lack of tools",
+        "Limited browser support",
+        "Requires JavaScript",
+        "Limited client support and outdated standards"
+      ],
+      "correctAnswer": "Limited client support and outdated standards"
+    },
+    {
+      "question": "HTML email is universally consistent across all email clients.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "question": "What is a common practice for automated email addresses?",
+      "answers": [
+        "user@domain.com",
+        "support@domain.com",
+        "admin@domain.com",
+        "do-not-reply@domain.com"
+      ],
+      "correctAnswer": "do-not-reply@domain.com"
+    },
+    {
+      "question": "Which library is used in Node.js for sending emails?",
+      "answers": [
+        "Express-mail",
+        "SMTP.js",
+        "MailJS",
+        "Nodemailer"
+      ],
+      "correctAnswer": "Nodemailer"
+    },
+    {
+      "question": "What is required in every email message?",
+      "answers": [
+        "Attachment",
+        "Subject line",
+        "HTML body",
+        "From address"
+      ],
+      "correctAnswer": "From address"
+    },
+    {
+      "question": "What is one challenge with email compatibility?",
+      "answers": [
+        "Different ports",
+        "DNS issues",
+        "Different browsers",
+        "Different email client support"
+      ],
+      "correctAnswer": "Different email client support"
+    },
+    {
+      "question": "What does Nodemailer help simplify?",
+      "answers": [
+        "Routing",
+        "Database queries",
+        "Authentication",
+        "Email encoding and formatting"
+      ],
+      "correctAnswer": "Email encoding and formatting"
+    },
+    {
+      "question": "What is recommended when writing HTML email for compatibility?",
+      "answers": [
+        "Use advanced JavaScript",
+        "Avoid tables",
+        "Use modern CSS frameworks",
+        "Write simple, old-style HTML"
+      ],
+      "correctAnswer": "Write simple, old-style HTML"
+    },
+    {
+      "question": "What can be included in HTML emails?",
+      "answers": [
+        "Only JSON",
+        "Only attachments",
+        "Only text",
+        "Images and formatted content"
+      ],
+      "correctAnswer": "Images and formatted content"
+    },
+    {
+      "question": "What does MTA stand for?",
+      "answers": [
+        "Mail Transport API",
+        "Message Transfer Application",
+        "Message Tracking Agent",
+        "Mail Transfer Agent"
+      ],
+      "correctAnswer": "Mail Transfer Agent"
+    },
+    {
+      "question": "Which protocol is primarily used for sending email?",
+      "answers": [
+        "HTTP",
+        "FTP",
+        "TCP",
+        "SMTP"
+      ],
+      "correctAnswer": "SMTP"
+    },
+    {
+      "question": "Nodemailer eliminates the need to understand complex email encoding details.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "True"
+    },
+    {
+      "question": "Why is it recommended to include both HTML and text email versions?",
+      "answers": [
+        "For faster delivery",
+        "For encryption",
+        "To reduce size",
+        "For compatibility with all users"
+      ],
+      "correctAnswer": "For compatibility with all users"
+    },
+    {
+      "question": "What is the role of middleware in email sending?",
+      "answers": [
+        "Managing sessions",
+        "Handling HTTP requests",
+        "Rendering views",
+        "Encapsulating email functionality"
+      ],
+      "correctAnswer": "Encapsulating email functionality"
+    },
+    {
+      "question": "What is recommended for bulk email sending?",
+      "answers": [
+        "Local SMTP server",
+        "Manual sending",
+        "Express middleware",
+        "Specialized bulk email services"
+      ],
+      "correctAnswer": "Specialized bulk email services"
+    },
+    {
+      "question": "Email headers like the \"from\" address cannot be changed by the sender.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "question": "What feature allows sending emails to multiple recipients?",
+      "answers": [
+        "Nodemailer capability",
+        "Express routing",
+        "Looping requests",
+        "SMTP relay"
+      ],
+      "correctAnswer": "Nodemailer capability"
+    },
+    {
+      "question": "What layout technique is commonly used in HTML email?",
+      "answers": [
+        "Flexbox",
+        "Grid",
+        "Div-based layout",
+        "Tables"
+      ],
+      "correctAnswer": "Tables"
+    }
+  ]

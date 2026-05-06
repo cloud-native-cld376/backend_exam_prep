@@ -1,0 +1,202 @@
+[
+    {
+      "question": "What is a \"sharded\" database?",
+      "answers": [
+        "A database that uses only memory",
+        "A database with no primary key",
+        "A database split into multiple tables",
+        "A database where data is partitioned across multiple servers"
+      ],
+      "correctAnswer": "A database where data is partitioned across multiple servers"
+    },
+    {
+      "question": "Which property is typically used in a Mongoose schema to ensure a field must be provided?",
+      "answers": [
+        "index: true",
+        "unique: true",
+        "default: true",
+        "required: true"
+      ],
+      "correctAnswer": "required: true"
+    },
+    {
+      "question": "What does the Lean option do in a Mongoose query?",
+      "answers": [
+        "It deletes the data after reading",
+        "It only returns the first letter of every string",
+        "It makes the query run slower",
+        "It returns plain JavaScript objects instead of full Mongoose documents"
+      ],
+      "correctAnswer": "It returns plain JavaScript objects instead of full Mongoose documents"
+    },
+    {
+      "question": "Which term refers to the ability of a database to handle growth by adding more machines to a cluster?",
+      "answers": [
+        "Normalization",
+        "Horizontal Scaling",
+        "Virtualization",
+        "Vertical Scaling"
+      ],
+      "correctAnswer": "Horizontal Scaling"
+    },
+    {
+      "question": "What happens if you try to save a Mongoose document that fails schema validation?",
+      "answers": [
+        "The Node.js process crashes immediately",
+        "It saves anyway but logs a warning",
+        "The database creates a new field automatically",
+        "The save() method returns an error or rejects the promise"
+      ],
+      "correctAnswer": "The save() method returns an error or rejects the promise"
+    },
+    {
+      "question": "When using MongoDB, what is a \"collection\" roughly equivalent to in a relational database?",
+      "answers": [
+        "A Row",
+        "A Database",
+        "A Column",
+        "A Table"
+      ],
+      "correctAnswer": "A Table"
+    },
+    {
+      "question": "Which Mongoose method is used to retrieve a single document by its ID?",
+      "answers": [
+        "Model.find()",
+        "Model.getOne()",
+        "Model.findById()",
+        "Model.select()"
+      ],
+      "correctAnswer": "Model.findById()"
+    },
+    {
+      "question": "What is a \"Connection String\" (URI) in the context of MongoDB?",
+      "answers": [
+        "A password for the OS",
+        "A list of all collection names",
+        "A string of code to encrypt data",
+        "A URL that tells the application where and how to connect to the database"
+      ],
+      "correctAnswer": "A URL that tells the application where and how to connect to the database"
+    },
+    {
+      "question": "Which Node.js package is widely used as an Object Data Modeling (ODM) library for MongoDB?",
+      "answers": [
+        "TypeORM",
+        "Sequelize",
+        "Knex",
+        "Mongoose"
+      ],
+      "correctAnswer": "Mongoose"
+    },
+    {
+      "question": "Which of the following is a reason to choose a Relational Database (like PostgreSQL) over a NoSQL database?",
+      "answers": [
+        "Preference for JSON-like storage",
+        "Rapidly changing data structures",
+        "Need for horizontal scaling",
+        "Requirement for complex joins and strict data integrity"
+      ],
+      "correctAnswer": "Requirement for complex joins and strict data integrity"
+    },
+    {
+      "question": "Which database type is characterized by a \"schema-less\" nature and stores data in documents?",
+      "answers": [
+        "Relational (RDBMS)",
+        "Graph Database",
+        "Flat-file Database",
+        "NoSQL (e.g., MongoDB)"
+      ],
+      "correctAnswer": "NoSQL (e.g., MongoDB)"
+    },
+    {
+      "question": "Which of the following is NOT a valid Mongoose SchemaType?",
+      "answers": [
+        "String",
+        "ArrayList",
+        "Boolean",
+        "Number"
+      ],
+      "correctAnswer": "ArrayList"
+    },
+    {
+      "question": "In a \"One-to-Many\" relationship in MongoDB, what is the most common way to represent the \"Many\" side?",
+      "answers": [
+        "Creating a separate database for each item",
+        "Using a CSV file",
+        "Hardcoding the values in the application logic",
+        "Nesting an array of subdocuments or using references"
+      ],
+      "correctAnswer": "Nesting an array of subdocuments or using references"
+    },
+    {
+      "question": "What is a \"Seeder\" script used for in development?",
+      "answers": [
+        "To delete all production data",
+        "To optimize database indexes",
+        "To encrypt user passwords",
+        "To populate a database with initial or dummy data"
+      ],
+      "correctAnswer": "To populate a database with initial or dummy data"
+    },
+    {
+      "question": "Why is it recommended to use environment variables for database credentials?",
+      "answers": [
+        "To allow the database to be shared publicly",
+        "Because Node.js requires it for all strings",
+        "To make the code run faster",
+        "To keep sensitive information out of source control"
+      ],
+      "correctAnswer": "To keep sensitive information out of source control"
+    },
+    {
+      "question": "How does MongoDB handle document identifiers by default?",
+      "answers": [
+        "It requires the user to provide a GUID",
+        "It uses an auto-incrementing integer",
+        "It uses the filename as the ID",
+        "It generates a unique _id field (ObjectId)"
+      ],
+      "correctAnswer": "It generates a unique _id field (ObjectId)"
+    },
+    {
+      "question": "What is the purpose of mongoose.connect()?",
+      "answers": [
+        "To export data to a JSON file",
+        "To define a data model",
+        "To create a new database",
+        "To establish a connection between Node.js and MongoDB"
+      ],
+      "correctAnswer": "To establish a connection between Node.js and MongoDB"
+    },
+    {
+      "question": "What does \"ACID\" stand for in relational database management systems?",
+      "answers": [
+        "Accuracy, Control, Integration, Delivery",
+        "Allocation, Cache, Instance, Data",
+        "Access, Compression, Indexing, Distribution",
+        "Atomicity, Consistency, Isolation, Durability"
+      ],
+      "correctAnswer": "Atomicity, Consistency, Isolation, Durability"
+    },
+    {
+      "question": "In Mongoose, what is the difference between a Schema and a Model?",
+      "answers": [
+        "A Model is for SQL; a Schema is for NoSQL",
+        "A Schema is for production; a Model is for testing",
+        "They are identical",
+        "A Schema defines structure; a Model is a constructor compiled from the Schema"
+      ],
+      "correctAnswer": "A Schema defines structure; a Model is a constructor compiled from the Schema"
+    },
+    {
+      "question": "In the context of Node.js, what is the primary disadvantage of using the filesystem for data persistence?",
+      "answers": [
+        "Ease of backup",
+        "Low cost",
+        "Support for complex queries",
+        "Difficulty in handling concurrent access"
+      ],
+      "correctAnswer": "Difficulty in handling concurrent access"
+    }
+  ]
