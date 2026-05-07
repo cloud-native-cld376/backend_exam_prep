@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  const QUIZ_FILES = ['quiz8', 'quiz9', 'quiz10', 'quiz11', 'quiz12', 'quiz13', 'quiz14'];
+  const QUIZ_FILES = ['quiz7','quiz8', 'quiz9', 'quiz10', 'quiz11', 'quiz12', 'quiz13', 'quiz14'];
   const DATA_BASE = 'data';
   const CORRECT_PIN = '69696969';
   const PIN_STORAGE_KEY = 'quizPinUnlocked';
